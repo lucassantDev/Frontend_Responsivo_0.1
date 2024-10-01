@@ -85,7 +85,7 @@ h1{
     height: 300px;
     background-color: var(--Preto_90porcento);
     /* border: 1px solid black; */
-    border-top: 1px solid gray;
+    
 }
 
 .medidas_impar{
@@ -95,7 +95,6 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-top: 1px solid gray;
     /* border: 1px solid rgb(245, 245, 245); */
 }
 
@@ -259,46 +258,247 @@ footer{
 
 /* CONFIGURAÇÃO PARA CELULAR */
 
-#imagemFundo_mobile{
+#imagemFundo_celular{
     display: none;
     background-image: url(imagem/header.png);
+    background-size: cover;
     width: 100%;
-    height: 350px;
-}
-
-#textoMobile{
-    font-size: 9px;
-    color: white;
-    margin-left: 40px;
-    padding-top: 35px;
-    display: none;
-}
-
-#caixaCadastro{
-    
-    display: none;
-}
-
-#imagem_fimPagina_mobile{
-    width: 200px;
     height: 200px;
+    font-size: 9px;
+}
+
+#elementosFimpagina_tablet_mobile{
+    display: none;
+    flex-direction: column  ;
+    width: 100%;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+#imagemSmartphone_tablet_celular{
+    display: none;
+    width: 400px;
+    height: 300px;
     background-image: url(imagem/smartphone.png);
     background-size: cover;
-    display: none;
 }
 
-#texto_fimPagina_mobile{
-    font-size: 7px;
+#textoSmartphone_tablet_celular{
+    display: none;
+    font-size: 14px;
     color: white;
-    display: none;
+    margin-bottom: 30px;
 }
 
-/*  */
+#botaoSmartphone_tablet_celular{
+    display: none;
+    width: 350px;
+    height: 50px;
+    background-color: var(--Amarelo_ouro);
+    color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+#campos_Celular{
+    display: none;
+    width: 100%;
+    height: 400px;
+    background-color: var(--Preto_100porcento);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#campo_01{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+
+#campo_02{
+    color: white;
+}
+
+#campo_03{
+    width: 300px;
+    height: 50px;
+    background-color: white;
+}
+
+#campo_04{
+    font-size: 12px;
+    width: 300px;
+    height: 50px;
+    background-color: var(--Amarelo_ouro);
+}
+
 
 @media screen and (max-width: 480px) {
 
+    *{
+    margin: 0;
+    }
     
+    /* CONFIGURANDO PARTE INICIAL CELULAR */
+    #imagemFundo{
+        display: none;
+    }
+
+    #imagemFundo_celular{
+        display: flex;
+    }
+
+    #imagemFundo_celular > h1{
+        margin-left: 45px;
+        margin-top: 45px;
+        color: white;
+    }
+
+    #campos_Celular{
+        display: flex;
+
+    }
+
+    #campo_03, #campo_04{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+    }
+
+    /* -----------------------FIM CONFIGURAÇÃO INICIAL CELULAR--------------------------- */
+
+
+    /* CONFIGURANDO TEXTOS E IMAGENS CELULAR  */
+    .medidas_impar{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 400px;
+    }
+    
+    .medidas_par{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 400px;
+    }
+
+
+    #informacao_01{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    #informacao_01_texto{
+        color: white;
+        font-size: 11px;
+    }
+    
+    #informacao_01 img{
+        width: 120px;
+        height: 120px;
+    }
+
+    #informacao_02{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    
+    #informacao_02_texto{
+        color: white;
+        font-size: 11px;
+    }
+    
+    #informacao_02 img{
+        width: 120px;
+        height: 120px;
+    }
+
+
+    #informacao_03{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    #informacao_03_texto{
+        color: white;
+        font-size: 11px;
+    }
+    
+    #informacao_03 img{
+        width: 120px;
+        height: 120px;
+    }
+
+
+    #informacao_04{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    #informacao_04_texto{
+        color: white;
+        font-size: 11px;
+    }
+    
+    #informacao_04 img{
+        width: 120px;
+        height: 120px;
+    }
+    /* ---------------------- FIM DE CONFIGURAÇÃO TEXTOS E IMAGENS CELULAR---------------------------- */
+
+   
+    /* CONFIGURAÇÃO MIRIAN MENDONÇA CELULAR */
+    #mirianMendonca{
+        flex-direction: column;
+    }
+
+    #imagemMirian{
+        width: 200px;
+        height: 200px;
+    }
+
+    #textosMirian{
+        color: white;
+        font-size: 12px;
+    }
+    /* ----------------------- FIM CONFIGURAÇAÕ MIRIAN MENDONÇA CELULAR--------------------------- */
+
+    /* CONFIGURAÇÃO FINAL DA PAGINA CELULAR */
+    #fimPagina{
+        width: 100%;
+        height: 600px;
+    }
+
+    #fimPagina > #imagem_fimpagina{
+        display: none;
+    }
+
+    footer{
+        width: 100%;
+        height: 20px;
+        font-size: 12px;
+    }
+
+    /* ----------------------- AINDA NÃO FINALIZADO --------------------------- */
 }
+
+/* ---------------------FIM CONFIGURAÇÃO PARA CELULAR----------------------------- */
+
+
 
 
 /* CONIGRAÇÃO PARA TABLET */
