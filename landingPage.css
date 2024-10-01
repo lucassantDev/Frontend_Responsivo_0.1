@@ -15,9 +15,9 @@
 
 }
 
-a{
+span{
     color: #FDC807;
-    text-decoration: none;
+    
 }
 
 body{
@@ -259,8 +259,253 @@ footer{
 
 /* CONFIGURAÇÃO PARA CELULAR */
 
+#imagemFundo_mobile{
+    display: none;
+    background-image: url(imagem/header.png);
+    width: 100%;
+    height: 350px;
+}
+
+#textoMobile{
+    font-size: 9px;
+    color: white;
+    margin-left: 40px;
+    padding-top: 35px;
+    display: none;
+}
+
+#caixaCadastro{
+    
+    display: none;
+}
+
+#imagem_fimPagina_mobile{
+    width: 200px;
+    height: 200px;
+    background-image: url(imagem/smartphone.png);
+    background-size: cover;
+    display: none;
+}
+
+#texto_fimPagina_mobile{
+    font-size: 7px;
+    color: white;
+    display: none;
+}
+
+/*  */
 
 @media screen and (max-width: 480px) {
 
     
+}
+
+
+/* CONIGRAÇÃO PARA TABLET */
+
+#elementosFimpagina_tablet_mobile{
+    display: none;
+    flex-direction: column  ;
+    width: 100%;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+#imagemSmartphone_tablet_celular{
+    display: none;
+    width: 400px;
+    height: 300px;
+    background-image: url(imagem/smartphone.png);
+    background-size: cover;
+}
+
+#textoSmartphone_tablet_celular{
+    display: none;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+#botaoSmartphone_tablet_celular{
+    display: none;
+    width: 350px;
+    height: 50px;
+    background-color: var(--Amarelo_ouro);
+    color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    *{
+        margin: 0;
+    }
+
+    
+    #imagemFundo{
+        width: 100%;
+        height: 350px;
+    }
+
+    #textosIMG{
+        font-size: 8px;
+        margin-left: 70px;
+        padding-top: 20px;
+    }
+
+    #textosIMG > p{
+        font-size: 14px;
+    }
+
+    #pequenaTag{
+        margin-left: 70px;
+        margin-top: 25px;
+        font-size: 12px;
+    }
+
+    #fakePlaceholder{
+        width: 230px;
+        height: 30px;
+        margin-left: 70px;
+        margin-top: 15px;
+        font-size: 14px;
+    }
+
+    /* !!!! */
+    #botaoAnimado{
+        width: 230px;
+        height: 40px;
+        margin-left: 70px;
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+        margin-bottom: 10%;
+    }
+    /*  */
+
+    .medidas_impar{
+        width: 100%;
+        height: 200px;
+        border-top: none;
+    }
+
+    .medidas_par{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top: none;
+
+    }
+
+    #informacao_01{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    #informacao_01_texto{
+        font-size: 12px;
+    }
+
+    #informacao_01 img{
+        width: 120px;
+        height: 120px;
+    }
+
+    #informacao_02{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    #informacao_02_texto{
+        font-size: 12px;
+    }
+
+    #informacao_02 img{
+        width: 120px;
+        height: 120px;
+    }
+
+    #informacao_03{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    #informacao_03_texto{
+        font-size: 12px;
+    }
+
+    #informacao_03 img{
+        width: 120px;
+        height: 120px;
+    }
+
+    #informacao_04{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    #informacao_04_texto{
+        font-size: 12px;
+    }
+
+    #informacao_04 img{
+        width: 120px;
+        height: 120px;
+    }
+
+    #mirianMendonca{
+        height: 600px;
+        flex-direction: column;
+
+    }
+
+    #imagemMirian{
+        width: 250px;
+        height: 250px;
+    }
+
+    #textosMirian{
+        font-size: 15px;
+    }
+
+
+    #fimPagina{
+        display: none;
+    }
+
+    #elementosFimpagina_tablet_mobile{
+        display: flex;
+        background-color: var(--Preto_100porcento);
+    }
+    #imagemSmartphone_tablet_celular{
+        display: flex;
+        
+    }
+
+    #textoSmartphone_tablet_celular{
+        display: flex;
+        text-align: center;
+    }
+
+    #botaoSmartphone_tablet_celular{
+        display: flex;
+    }
+
+    footer{
+        height: 30px;
+        width: 100%;
+    }
 }
